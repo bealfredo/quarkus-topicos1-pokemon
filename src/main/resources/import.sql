@@ -6,31 +6,31 @@
 -- alter sequence myentity_seq restart with 4;
 
 -- Inserção 1 - Pikachu
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (1, 'Pikachu', 'Elétrico', 25);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Pikachu', 'Elétrico', 25);
 
 -- Inserção 2 - Charmander
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (2, 'Charmander', 'Fogo', 18);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Charmander', 'Fogo', 18);
 
 -- Inserção 3 - Bulbasaur
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (3, 'Bulbasaur', 'Planta', 14);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Bulbasaur', 'Planta', 14);
 
 -- Inserção 4 - Squirtle
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (4, 'Squirtle', 'Água', 16);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Squirtle', 'Água', 16);
 
 -- Inserção 5 - Jigglypuff
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (5, 'Jigglypuff', 'Fada', 12);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Jigglypuff', 'Fada', 12);
 
 -- Inserção 6 - Meowth
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (6, 'Meowth', 'Normal', 10);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Meowth', 'Normal', 10);
 
 -- Inserção 7 - Psyduck
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (7, 'Psyduck', 'Água', 15);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Psyduck', 'Água', 15);
 
 -- Inserção 8 - Eevee
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (8, 'Eevee', 'Normal', 20);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Eevee', 'Normal', 20);
 
 -- Inserção 9 - Pikachu (outra instância)
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (9, 'Pikachu', 'Elétrico', 30);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Pikachu', 'Elétrico', 30);
 
 -- Inserção 10 - Charizard
-INSERT INTO pokemon (id, nome, tipo, nivel) VALUES (10, 'Charizard', 'Fogo', 50);
+INSERT INTO pokemon (nome, tipo, nivel) VALUES ('Charizard', 'Fogo', 50);

@@ -7,8 +7,10 @@ import br.unitins.topicos1.pokemon.repository.PokemonRepository;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
@@ -33,6 +35,30 @@ public class PokemonResource {
     repository.persist(newPokemon);
 
     return newPokemon;
+  }
+
+  @DELETE
+  @Transactional
+  @Path("/delete/id/{id}")
+  public Pokemon delete(@PathParam("id") Long id) {
+    Pokemon pokemon2delete = repository.findById(id);
+    repository.deleteById(id);
+
+    return pokemon2delete;
+  }
+
+  @PUT
+  @Transactional
+  @Path("/put/id/{id}")
+  public Pokemon put(@PathParam("id") Long id, Pokemon pokemonUpdated) {
+    Pokemon pokemon = repository.findById(id);
+    pokemon.setNome(pokemonUpdated.getNome());
+    pokemon.setTipo(pokemonUpdated.getTipo());
+    pokemon.setNivel(pokemonUpdated.getNivel());
+    
+    repository.persist(pokemon);
+
+    return pokemon;
   }
 
   @GET
